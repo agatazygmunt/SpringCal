@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Page</title>
+    <div th:replace="pageframgments :: header_styles"/>
+</head>
+<body>
+<h1>Hello Spring World!</h1>
+
+<div class="container">
+
+    <form th:action="@{/calulato}"action="post">
+        Size X: <input type="number" step="1" min="1" size="sizeX">
+        Size Y: <input type="number" step="1" min="1" size="sizeY">
+
+        <input type="submit">
+    </form>
+</div>
+
+
+
+<div th:replace="pageframgments :: header_scripts"/>
+</body>
+</html>
